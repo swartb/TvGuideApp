@@ -1,0 +1,11 @@
+# Xcode build artifacts
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
+# Swift Package Manager local build cache
+.build/
+
+# macOS
+.DS_Store
