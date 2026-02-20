@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB110001000000000000B001 /* TVGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A001 /* TVGuideApp.swift */; };
+		BB110001000000000000B002 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A003 /* FeedService.swift */; };
+		BB110001000000000000B003 /* XMLTVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A004 /* XMLTVParser.swift */; };
+		BB110001000000000000B004 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A005 /* DatabaseManager.swift */; };
+		BB110001000000000000B005 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A006 /* Channel.swift */; };
+		BB110001000000000000B006 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A007 /* Programme.swift */; };
+		BB110001000000000000B007 /* ChannelDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A008 /* ChannelDetailView.swift */; };
+		BB110001000000000000B008 /* ChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A009 /* ChannelsView.swift */; };
+		BB110001000000000000B009 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A00A /* ContentView.swift */; };
+		BB110001000000000000B00A /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A00B /* EmptyStateView.swift */; };
+		BB110001000000000000B00B /* NowNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A00C /* NowNextView.swift */; };
+		BB110001000000000000B00C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110001000000000000A00D /* SettingsView.swift */; };
+		BB110001000000000000B00D /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = CC220001000000000000C002 /* GRDB */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA110001000000000000A001 /* TVGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVGuideApp.swift; sourceTree = "<group>"; };
+		AA110001000000000000A002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA110001000000000000A003 /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		AA110001000000000000A004 /* XMLTVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLTVParser.swift; sourceTree = "<group>"; };
+		AA110001000000000000A005 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		AA110001000000000000A006 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		AA110001000000000000A007 /* Programme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
+		AA110001000000000000A008 /* ChannelDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailView.swift; sourceTree = "<group>"; };
+		AA110001000000000000A009 /* ChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsView.swift; sourceTree = "<group>"; };
+		AA110001000000000000A00A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA110001000000000000A00B /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		AA110001000000000000A00C /* NowNextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowNextView.swift; sourceTree = "<group>"; };
+		AA110001000000000000A00D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA110001000000000000A00E /* TvGuideApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TvGuideApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD110001000000000000D003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB110001000000000000B00D /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC110001000000000000C001 /* TvGuideApp */ = {
+			isa = PBXGroup;
+			children = (
+				CC110001000000000000C002 /* App */,
+				CC110001000000000000C003 /* Core */,
+				CC110001000000000000C004 /* Database */,
+				CC110001000000000000C005 /* Models */,
+				CC110001000000000000C006 /* Views */,
+				CC110001000000000000C007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC110001000000000000C002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA110001000000000000A001 /* TVGuideApp.swift */,
+				AA110001000000000000A002 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CC110001000000000000C003 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AA110001000000000000A003 /* FeedService.swift */,
+				AA110001000000000000A004 /* XMLTVParser.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CC110001000000000000C004 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				AA110001000000000000A005 /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		CC110001000000000000C005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA110001000000000000A006 /* Channel.swift */,
+				AA110001000000000000A007 /* Programme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC110001000000000000C006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA110001000000000000A008 /* ChannelDetailView.swift */,
+				AA110001000000000000A009 /* ChannelsView.swift */,
+				AA110001000000000000A00A /* ContentView.swift */,
+				AA110001000000000000A00B /* EmptyStateView.swift */,
+				AA110001000000000000A00C /* NowNextView.swift */,
+				AA110001000000000000A00D /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC110001000000000000C007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA110001000000000000A00E /* TvGuideApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE110001000000000000E001 /* TvGuideApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB220001000000000000B002 /* Build configuration list for PBXNativeTarget "TvGuideApp" */;
+			buildPhases = (
+				DD110001000000000000D001 /* Sources */,
+				DD110001000000000000D002 /* Resources */,
+				DD110001000000000000D003 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TvGuideApp;
+			packageProductDependencies = (
+				CC220001000000000000C002 /* GRDB */,
+			);
+			productName = TvGuideApp;
+			productReference = AA110001000000000000A00E /* TvGuideApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF110001000000000000F001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EE110001000000000000E001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = BB220001000000000000B001 /* Build configuration list for PBXProject "TvGuideApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = nl;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				nl,
+				Base,
+			);
+			mainGroup = CC110001000000000000C001;
+			packageReferences = (
+				CC220001000000000000C001 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
+			productRefGroup = CC110001000000000000C007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE110001000000000000E001 /* TvGuideApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD110001000000000000D002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD110001000000000000D001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB110001000000000000B001 /* TVGuideApp.swift in Sources */,
+				BB110001000000000000B002 /* FeedService.swift in Sources */,
+				BB110001000000000000B003 /* XMLTVParser.swift in Sources */,
+				BB110001000000000000B004 /* DatabaseManager.swift in Sources */,
+				BB110001000000000000B005 /* Channel.swift in Sources */,
+				BB110001000000000000B006 /* Programme.swift in Sources */,
+				BB110001000000000000B007 /* ChannelDetailView.swift in Sources */,
+				BB110001000000000000B008 /* ChannelsView.swift in Sources */,
+				BB110001000000000000B009 /* ContentView.swift in Sources */,
+				BB110001000000000000B00A /* EmptyStateView.swift in Sources */,
+				BB110001000000000000B00B /* NowNextView.swift in Sources */,
+				BB110001000000000000B00C /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA220001000000000000A001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA220001000000000000A002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA220001000000000000A003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tvguideapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA220001000000000000A004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tvguideapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB220001000000000000B001 /* Build configuration list for PBXProject "TvGuideApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA220001000000000000A001 /* Debug */,
+				AA220001000000000000A002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB220001000000000000B002 /* Build configuration list for PBXNativeTarget "TvGuideApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA220001000000000000A003 /* Debug */,
+				AA220001000000000000A004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC220001000000000000C001 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC220001000000000000C002 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC220001000000000000C001 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+	};
+	rootObject = FF110001000000000000F001 /* Project object */;
+}
