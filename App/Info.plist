@@ -2,6 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <!-- Bundle identification -->
+    <key>CFBundleIdentifier</key>
+    <string>com.swartb.TvGuideApp</string>
+    <key>CFBundleDisplayName</key>
+    <string>TvGuideApp</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <!-- Version information -->
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- iOS requirement -->
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+
     <!-- Background modes required for BGAppRefreshTask -->
     <key>UIBackgroundModes</key>
     <array>
@@ -19,12 +43,10 @@
     <key>UILaunchScreen</key>
     <dict/>
 
-    <!-- Supported orientations -->
+    <!-- Supported orientations (portrait only) -->
     <key>UISupportedInterfaceOrientations</key>
     <array>
         <string>UIInterfaceOrientationPortrait</string>
-        <string>UIInterfaceOrientationLandscapeLeft</string>
-        <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
 
     <key>UIApplicationSceneManifest</key>
@@ -32,5 +54,11 @@
         <key>UIApplicationSupportsMultipleScenes</key>
         <false/>
     </dict>
+
+    <!-- Permission usage descriptions -->
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Deze app gebruikt Bluetooth om verbinding te maken met externe apparaten.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Deze app heeft locatie nodig om lokale tv-gids informatie te tonen.</string>
 </dict>
 </plist>
